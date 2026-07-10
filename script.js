@@ -1,0 +1,1 @@
+fetch('data/weapons.json').then(r=>r.json()).then(d=>{let l=document.getElementById('list');let s=document.getElementById('search');function f(q=''){l.innerHTML='';d.filter(x=>x.name.toLowerCase().includes(q.toLowerCase())).forEach(x=>l.innerHTML+=`<div class='card'><img src='${x.image}'><h2>${x.name}</h2><p>${x.note}</p></div>`)};f();s.oninput=e=>f(e.target.value);});
