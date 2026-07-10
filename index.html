@@ -1,250 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aLKHii | CODM Loadouts</title>
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<title>aLKHii</title>
-
-<link
-rel="stylesheet"
-href="style.css">
-
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-rel="stylesheet">
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="bg"></div>
-
-<nav>
+<header class="topbar">
 
 <div class="logo">
-
 <h1>aLKHii</h1>
-
-<span>Gaming Hub</span>
-
+<p>CODM Loadouts</p>
 </div>
+
+</header>
+
+<section class="search-area">
 
 <input
 type="text"
 id="searchInput"
-placeholder="Search...">
-
-</nav>
-
-<header class="hero">
-
-<h2>
-
-Your Personal
-
-Gaming Collection
-
-</h2>
-
-<p>
-
-Simple.
-
-Fast.
-
-Beautiful.
-
-</p>
-
-<button>
-
-Explore
-
-</button>
-
-</header>
-
-<section class="title">
-
-<h2>
-
-Categories
-
-</h2>
+placeholder="🔍 Search weapon...">
 
 </section>
 
-<section class="grid">
+<section class="filters">
 
-<div class="card">
+<button class="active">All</button>
+<button>AR</button>
+<button>SMG</button>
+<button>LMG</button>
+<button>Shotgun</button>
+<button>Sniper</button>
+<button>Marksman</button>
+<button>Pistol</button>
 
-<div class="icon">
+</section>
 
-🎯
+<section id="weaponList" class="weapon-list">
 
-</div>
+<div class="weapon-card">
 
-<h3>
+<img src="images/bp50.webp" alt="BP50">
 
-Assault Rifles
+<div class="info">
 
-</h3>
+<span class="category">ASSAULT RIFLE</span>
 
-<p>
+<h2>BP50</h2>
 
-Browse Collection
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">
-
-⚡
+<p>Best MP Ranked Build</p>
 
 </div>
 
-<h3>
+</div>
 
-SMGs
+<div class="weapon-card">
 
-</h3>
+<img src="images/uss9.webp" alt="USS9">
 
-<p>
+<div class="info">
 
-Browse Collection
+<span class="category">SMG</span>
 
-</p>
+<h2>USS 9</h2>
+
+<p>No Recoil Build</p>
 
 </div>
 
-<div class="card">
-
-<div class="icon">
-
-🎯
-
 </div>
 
-<h3>
+<div class="weapon-card">
 
-Snipers
+<img src="images/striker.webp" alt="Striker">
 
-</h3>
+<div class="info">
 
-<p>
+<span class="category">SHOTGUN</span>
 
-Browse Collection
+<h2>Striker</h2>
 
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">
-
-💥
+<p>Close Range Build</p>
 
 </div>
-
-<h3>
-
-LMGs
-
-</h3>
-
-<p>
-
-Browse Collection
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">
-
-🔥
-
-</div>
-
-<h3>
-
-Shotguns
-
-</h3>
-
-<p>
-
-Browse Collection
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">
-
-🎖️
-
-</div>
-
-<h3>
-
-Marksman
-
-</h3>
-
-<p>
-
-Browse Collection
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">
-
-🔫
-
-</div>
-
-<h3>
-
-Pistols
-
-</h3>
-
-<p>
-
-Browse Collection
-
-</p>
 
 </div>
 
 </section>
-
-<footer>
-
-Made by aLKHii 💙
-
-</footer>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
