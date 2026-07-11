@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>404 • aLKHii</title>
+
+    <meta name="description" content="The page you're looking for could not be found. Return to aLKHii for the latest Call of Duty: Mobile Multiplayer weapon builds.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#2f4f2f">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="icons/icon-192.png">
+
+    <meta property="og:title" content="404 • aLKHii">
+    <meta property="og:description" content="Return to aLKHii and browse the latest CODM Multiplayer weapon builds.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="icons/icon-512.png">
+</head>
+
+<body>
+
+<div id="scrollProgress" aria-hidden="true"></div>
+
+<main class="hero error-page fade-in" role="main">
+
+    <div class="hero-overlay"></div>
+
+    <section class="hero-content">
+
+        <span class="section-badge">
+            ERROR
+        </span>
+
+        <h1 class="hero-title">
+            404
+        </h1>
+
+        <h2 class="section-title">
+            Page Not Found
+        </h2>
+
+        <p class="hero-description">
+            The page you requested doesn't exist, may have been moved, or the link is incorrect.
+            Return to the homepage to continue browsing the latest Call of Duty: Mobile Multiplayer weapon builds.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="index.html"
+                class="btn btn-primary"
+                aria-label="Return to the homepage">
+
+                Return Home
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h3>aLKHii</h3>
+
+        <p>
+            Made for CODM Players
+        </p>
+
+        <p>
+            &copy; <span id="year"></span> aLKHii • GitHub Pages Ready
+        </p>
+
+    </div>
+
+</footer>
+
+<button
+    id="scrollTop"
+    class="scroll-top"
+    aria-label="Scroll to top">
+
+    ↑
+
+</button>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const progress = document.getElementById("scrollProgress");
+
+window.addEventListener("scroll", () => {
+
+    const top = document.documentElement.scrollTop;
+
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    progress.style.width = (top / height) * 100 + "%";
+
+});
+
+const topButton = document.getElementById("scrollTop");
+
+window.addEventListener("scroll", () => {
+
+    topButton.classList.toggle("show", window.scrollY > 300);
+
+});
+
+topButton.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker.register("service-worker.js");
+
+    });
+
+}
+</script>
+
+</body>
+</html>
