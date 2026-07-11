@@ -3,211 +3,467 @@
 <head>
 
 <meta charset="UTF-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aLKHii | Best CODM Multiplayer Weapon Attachments</title>
 
-<title>aLKHii CODM Loadouts</title>
+<meta
+name="description"
+content="aLKHii is a premium Call of Duty Mobile Multiplayer weapon attachment database with META builds, comparisons, favorites and season updates.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta
+name="keywords"
+content="CODM, Call of Duty Mobile, MP, META, Attachments, Weapon Builds">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#283618">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="aLKHii">
+
+<meta
+property="og:description"
+content="Best Call of Duty Mobile Multiplayer Weapon Attachments">
+
+<meta property="og:type" content="website">
+
+<link rel="manifest" href="manifest.json">
 
 <link rel="stylesheet" href="style.css">
+
+<link
+rel="icon"
+type="image/png"
+href="icons/favicon.png">
 
 </head>
 
 <body>
 
-<div class="background"></div>
+<div id="progressBar"></div>
 
-<header>
+<header class="season-banner">
+Updated for CODM Season X
+</header>
+
+<nav class="navbar">
 
 <div class="logo">
 
 <h1>aLKHii</h1>
 
-<p>CODM Loadouts</p>
+</div>
+
+<button
+id="menuToggle"
+class="menu-toggle"
+aria-label="Open Navigation">
+
+☰
+
+</button>
+
+<ul id="navMenu">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#weapons">Weapons</a></li>
+
+<li><a href="#meta">Meta</a></li>
+
+<li><a href="#updates">Updates</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#admin">Admin</a></li>
+
+</ul>
+
+</nav>
+
+<section
+id="home"
+class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>aLKHii</h1>
+
+<h2>
+
+Best Call of Duty: Mobile Multiplayer Weapon Attachments
+
+</h2>
+
+<p>
+
+Community-driven META attachment database.
+
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#weapons"
+class="btn primary">
+
+Browse Weapons
+
+</a>
+
+<a
+href="#meta"
+class="btn secondary">
+
+Latest Meta
+
+</a>
 
 </div>
 
-<div class="search">
+</div>
+
+</section>
+
+<section
+id="meta"
+class="section">
+
+<div class="section-title">
+
+<h2>
+
+Top META Weapons
+
+</h2>
+
+<p>
+
+Automatically loaded from the database.
+
+</p>
+
+</div>
+
+<div
+id="metaContainer"
+class="weapon-grid">
+
+</div>
+
+</section>
+
+<section
+class="section search-section">
+
+<div class="search-box">
 
 <input
 type="text"
-placeholder="Search Weapon...">
+id="searchInput"
+placeholder="Search weapon...">
 
-</div>
+<select id="categoryFilter">
 
-</header>
+<option value="">All Categories</option>
 
-<section class="cards" id="weaponContainer">
+<option>Assault Rifle</option>
 
-    <!--
-        =====================================================
-        WEAPON TEMPLATE
-        =====================================================
+<option>SMG</option>
 
-        Kopyahin ang buong block sa ibaba kapag magdadagdag
-        ka ng bagong weapon.
+<option>LMG</option>
 
-        Baguhin lamang ang:
-        - Weapon Name
-        - Category
-        - Image
-        - Note
+<option>Sniper</option>
 
-    -->
+<option>Marksman</option>
 
-    <div class="card">
+<option>Shotgun</option>
 
-        <!-- CHANGE IMAGE HERE -->
-        <img src="images/weapon-image.png" alt="Weapon Name">
+<option>Pistol</option>
 
-        <div class="info">
+</select>
 
-            <!-- CHANGE CATEGORY -->
-            <span class="category">CATEGORY</span>
+<select id="sortSelect">
 
-            <!-- CHANGE WEAPON NAME -->
-            <h2>Weapon Name</h2>
+<option value="az">A-Z</option>
 
-            <!-- OPTIONAL -->
-            <p>Meta Build</p>
+<option value="za">Z-A</option>
 
-        </div>
+<option value="newest">Newest</option>
 
-    </div>
+<option value="popular">Most Popular</option>
 
-</section>
-
-<section class="hero">
-
-<h2>
-
-YOUR BEST
-
-CODM
-
-LOADOUTS
-
-</h2>
-
-<p>
-
-Weapon builds.
-
-Attachments.
-
-Meta loadouts.
-
-</p>
-
-</section>
-
-<section class="cards">
-
-<div class="card">
-
-<div class="placeholder">
-
-Screenshot
-
-</div>
-
-<div class="info">
-
-<span>
-
-ASSAULT RIFLE
-
-</span>
-
-<h2>
-
-BP50
-
-</h2>
-
-<p>
-
-Best MP Ranked
-
-</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="placeholder">
-
-Screenshot
-
-</div>
-
-<div class="info">
-
-<span>
-
-SMG
-
-</span>
-
-<h2>
-
-USS 9
-
-</h2>
-
-<p>
-
-No Recoil Build
-
-</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="placeholder">
-
-Screenshot
-
-</div>
-
-<div class="info">
-
-<span>
-
-SHOTGUN
-
-</span>
-
-<h2>
-
-Striker
-
-</h2>
-
-<p>
-
-Close Range Build
-
-</p>
-
-</div>
+</select>
 
 </div>
 
 </section>
+
+<section
+id="weapons"
+class="section">
+
+<div class="section-title">
+
+<h2>
+
+Weapon Database
+
+</h2>
+
+</div>
+
+<div
+id="weaponContainer"
+class="weapon-grid">
+
+</div>
+
+</section>
+
+<section
+id="updates"
+class="section">
+
+<div class="section-title">
+
+<h2>
+
+Latest Updates
+
+</h2>
+
+</div>
+
+<ul id="updatesList">
+
+</ul>
+
+</section>
+
+<section
+id="changelog"
+class="section">
+
+<div class="section-title">
+
+<h2>
+
+Changelog
+
+</h2>
+
+</div>
+
+<div id="changelogList">
+
+</div>
+
+</section>
+
+<section
+id="comparison"
+class="section">
+
+<div class="section-title">
+
+<h2>
+
+Weapon Comparison
+
+</h2>
+
+</div>
+
+<div
+id="comparisonContainer">
+
+<p>
+
+Select two weapons to compare.
+
+</p>
+
+</div>
+
+</section>
+
+<section
+id="about"
+class="section">
+
+<div class="section-title">
+
+<h2>
+
+About aLKHii
+
+</h2>
+
+</div>
+
+<p>
+
+aLKHii is a community-driven Call of Duty: Mobile Multiplayer attachment database focused on providing the best weapon builds for every season.
+
+</p>
+
+</section>
+
+<section
+id="admin"
+class="section">
+
+<div class="section-title">
+
+<h2>
+
+Admin Panel
+
+</h2>
+
+</div>
+
+<div
+id="adminLogin">
+
+<input
+type="password"
+id="adminPassword"
+placeholder="Admin Password">
+
+<button
+id="adminLoginButton">
+
+Login
+
+</button>
+
+</div>
+
+<div
+id="adminPanel"
+class="hidden">
+
+<div class="admin-toolbar">
+
+<button id="addWeapon">
+
+Add Weapon
+
+</button>
+
+<button id="exportJSON">
+
+Export JSON
+
+</button>
+
+<button id="importJSON">
+
+Import JSON
+
+</button>
+
+<button id="backupDatabase">
+
+Backup Database
+
+</button>
+
+<button id="restoreDatabase">
+
+Restore Database
+
+</button>
+
+<button id="seasonUpdate">
+
+Update Season
+
+</button>
+
+</div>
+
+<div id="adminWeapons">
+
+</div>
+
+</div>
+
+</section>
+
+<div
+id="popup"
+class="popup hidden">
+
+<div class="popup-card">
+
+<button
+id="closePopup"
+class="close">
+
+✕
+
+</button>
+
+<img
+id="popupImage"
+src=""
+alt="Weapon">
+
+<h2 id="popupName"></h2>
+
+<p id="popupCategory"></p>
+
+<p id="popupSeason"></p>
+
+<p id="popupBadge"></p>
+
+<p id="popupDescription"></p>
+
+<p id="popupUpdated"></p>
+
+</div>
+
+</div>
+
+<button
+id="scrollTop">
+
+↑
+
+</button>
+
+<footer>
+
+<h2>aLKHii</h2>
+
+<p>
+
+Made for CODM Players
+
+</p>
+
+<p>
+
+GitHub Pages Ready
+
+</p>
+
+<p>
+
+© <span id="year"></span>
+
+aLKHii
+
+</p>
+
+</footer>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
