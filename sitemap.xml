@@ -3,21 +3,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/</loc>
+        <loc>https://alkhii.github.io/codm-loadouts/</loc>
         <lastmod>2026-07-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/index.html</loc>
+        <loc>https://alkhii.github.io/codm-loadouts/index.html</loc>
         <lastmod>2026-07-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/404.html</loc>
+        <loc>https://alkhii.github.io/codm-loadouts/404.html</loc>
         <lastmod>2026-07-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
